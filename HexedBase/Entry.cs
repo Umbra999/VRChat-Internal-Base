@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace HexedBase
 {
-    public class Entry : HexedCheat
+    public class Entry : HexedCheat // Define the Main Class for the Loader
     {
         public override void OnLoad()
         {
