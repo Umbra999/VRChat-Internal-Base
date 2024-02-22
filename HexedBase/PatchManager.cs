@@ -7,14 +7,14 @@ namespace HexedBase
 {
     internal class PatchManager
     {
-        private delegate bool _CreateCellDelegate(IntPtr __0, IntPtr __1);
-        private static _CreateCellDelegate originalMethod;
+        private delegate bool _DoesPlayerOwnProductDelegate(IntPtr __0, IntPtr __1);
+        private static _DoesPlayerOwnProductDelegate originalMethod;
 
         public static void ApplyStorePatch()
         {
             // Create a hook using the HookManager, if you need to know more about hooking read it up on the internet since its a complex task i wont explain here so much
             // We create a Hook inside the Store class on the DoesPlayerOwnProduct method which returns a boolean which is a c# default and takes 2 arguments which are not c# default so we specify them as IntPtr and cast them in our hook
-            originalMethod = HookManager.Detour<_CreateCellDelegate>(typeof(Store).GetMethod(nameof(Store.DoesPlayerOwnProduct)), Patch);
+            originalMethod = HookManager.Detour<_DoesPlayerOwnProductDelegate>(typeof(Store).GetMethod(nameof(Store.DoesPlayerOwnProduct)), Patch);
         }
 
         private static bool Patch(IntPtr __0, IntPtr __1)
