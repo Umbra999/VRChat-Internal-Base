@@ -1,32 +1,29 @@
 ﻿using CoreRuntime.Manager;
 using System;
-using VRC.Economy;
 using VRC.SDKBase;
 
 namespace HexedBase
 {
     internal class PatchManager
     {
-        private delegate bool _DoesPlayerOwnProductDelegate(IntPtr __0, IntPtr __1);
-        private static _DoesPlayerOwnProductDelegate originalMethod;
+        private delegate void _OnNetworkReadyDelegate(IntPtr instance);
+        private static _OnNetworkReadyDelegate originalMethod;
 
-        public static void ApplyStorePatch()
+        // Create a hook using the HookManager, if you need to know more about hooking read it up on the internet since its a complex task i wont explain here so much
+        public static void ApplyPatch()
         {
-            // Create a hook using the HookManager, if you need to know more about hooking read it up on the internet since its a complex task i wont explain here so much
-            // We create a Hook inside the Store class on the DoesPlayerOwnProduct method which returns a boolean which is a c# default and takes 2 arguments which are not c# default so we specify them as IntPtr and cast them in our hook
-            originalMethod = HookManager.Detour<_DoesPlayerOwnProductDelegate>(typeof(Store).GetMethod(nameof(Store.DoesPlayerOwnProduct)), Patch);
+            originalMethod = HookManager.Detour<_OnNetworkReadyDelegate>(typeof(VRC.Player).GetMethod(nameof(VRC.Player.OnNetworkReady)), Patch);
         }
 
-        private static bool Patch(IntPtr __0, IntPtr __1)
+        private static void Patch(IntPtr instance)
         {
-            // Cast our Pointer to a valid VRCPlayerApi like its orginally used
-            VRCPlayerApi Player = __0 == IntPtr.Zero ? null : new VRCPlayerApi(__0);
+            originalMethod(instance);
 
-            // If the player belongs to us we return true to tell the game we own the requested product from the store
-            if (Player != null && Player.isLocal) return true;
+            VRC.Player player = instance == IntPtr.Zero ? null : new VRC.Player(instance);
 
-            // If it ends up here the player is not our player so we just return the original method
-            return originalMethod(__0, __1);
+            if (player == null) return;
+
+            Console.WriteLine(player.prop_String_0 + " is ready");
         }
     }
 }

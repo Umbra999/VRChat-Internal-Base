@@ -15,10 +15,10 @@ namespace HexedBase
 
             // Specify our main function hooks to let the loader know about the games base functions, it takes any method that matches the original unity function struct
             MonoManager.PatchUpdate(typeof(VRCApplication).GetMethod(nameof(VRCApplication.Update))); // Update is needed to work with IEnumerators, hooking it will enable the CoroutineManager
-            MonoManager.PatchOnApplicationQuit(typeof(VRCApplication).GetMethod(nameof(VRCApplication.OnApplicationQuit))); // Optional Hook to enable the OnApplicationQuit callback
+            MonoManager.PatchOnApplicationQuit(typeof(VRCApplicationSetup).GetMethod(nameof(VRCApplicationSetup.OnApplicationQuit))); // Optional Hook to enable the OnApplicationQuit callback
 
             // Apply our custom Hooked function
-            PatchManager.ApplyStorePatch();
+            PatchManager.ApplyPatch();
 
             // Start a delayed function
             CoroutineManager.RunCoroutine(PrintLateHello());

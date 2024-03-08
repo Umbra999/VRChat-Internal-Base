@@ -29,6 +29,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
@@ -36,6 +37,9 @@
     </Reference>
     <Reference Include="CoreRuntime">
       <HintPath>C:\Users\Umbra\Desktop\HexedWare\Settings\UnityLoader\VRChat\Runtime\CoreRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="IL2CppGen">
+      <HintPath>C:\Users\Umbra\Desktop\HexedWare\Settings\UnityLoader\VRChat\Runtime\IL2CppGen.dll</HintPath>
     </Reference>
     <Reference Include="Il2CppInterop.Runtime">
       <HintPath>C:\Users\Umbra\Desktop\HexedWare\Settings\UnityLoader\VRChat\Runtime\Il2CppInterop.Runtime.dll</HintPath>
@@ -49,9 +53,6 @@
     </Reference>
     <Reference Include="UnityEngine.InputLegacyModule">
       <HintPath>C:\Users\Umbra\Desktop\HexedWare\Settings\UnityLoader\VRChat\Dummy\UnityEngine.InputLegacyModule.dll</HintPath>
-    </Reference>
-    <Reference Include="VRCEconomy">
-      <HintPath>C:\Users\Umbra\Desktop\HexedWare\Settings\UnityLoader\VRChat\Dummy\VRCEconomy.dll</HintPath>
     </Reference>
     <Reference Include="VRCSDKBase">
       <HintPath>C:\Users\Umbra\Desktop\HexedWare\Settings\UnityLoader\VRChat\Dummy\VRCSDKBase.dll</HintPath>
