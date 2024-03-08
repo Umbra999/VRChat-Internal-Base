@@ -32,45 +32,29 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\Desktop\HexedWare\Settings\UnityLoader\VRChat\Dummy\Assembly-CSharp.dll</HintPath>
+      <HintPath>C:\Users\Umbra\Desktop\HexedWare\Settings\UnityLoader\VRChat\Dummy\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="CoreRuntime">
-      <HintPath>..\..\..\..\Desktop\HexedWare\Settings\UnityLoader\VRChat\Runtime\CoreRuntime.dll</HintPath>
-    </Reference>
-    <Reference Include="IL2CppGen">
-      <HintPath>..\..\..\..\Desktop\HexedWare\Settings\UnityLoader\VRChat\Runtime\IL2CppGen.dll</HintPath>
+      <HintPath>C:\Users\Umbra\Desktop\HexedWare\Settings\UnityLoader\VRChat\Runtime\CoreRuntime.dll</HintPath>
     </Reference>
     <Reference Include="Il2CppInterop.Runtime">
-      <HintPath>..\..\..\..\Desktop\HexedWare\Settings\UnityLoader\VRChat\Runtime\Il2CppInterop.Runtime.dll</HintPath>
+      <HintPath>C:\Users\Umbra\Desktop\HexedWare\Settings\UnityLoader\VRChat\Runtime\Il2CppInterop.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Il2Cppmscorlib">
-      <HintPath>..\..\..\..\Desktop\HexedWare\Settings\UnityLoader\VRChat\Dummy\Il2Cppmscorlib.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json.Minimal">
-      <HintPath>..\..\..\..\Desktop\HexedWare\Settings\UnityLoader\VRChat\Runtime\Newtonsoft.Json.Minimal.dll</HintPath>
+      <HintPath>C:\Users\Umbra\Desktop\HexedWare\Settings\UnityLoader\VRChat\Dummy\Il2Cppmscorlib.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\Desktop\HexedWare\Settings\UnityLoader\VRChat\Dummy\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>C:\Users\Umbra\Desktop\HexedWare\Settings\UnityLoader\VRChat\Dummy\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputLegacyModule">
-      <HintPath>..\..\..\..\Desktop\HexedWare\Settings\UnityLoader\VRChat\Dummy\UnityEngine.InputLegacyModule.dll</HintPath>
-    </Reference>
-    <Reference Include="VRCCore-Standalone">
-      <HintPath>..\..\..\..\Desktop\HexedWare\Settings\UnityLoader\VRChat\Dummy\VRCCore-Standalone.dll</HintPath>
+      <HintPath>C:\Users\Umbra\Desktop\HexedWare\Settings\UnityLoader\VRChat\Dummy\UnityEngine.InputLegacyModule.dll</HintPath>
     </Reference>
     <Reference Include="VRCEconomy">
-      <HintPath>..\..\..\..\Desktop\HexedWare\Settings\UnityLoader\VRChat\Dummy\VRCEconomy.dll</HintPath>
+      <HintPath>C:\Users\Umbra\Desktop\HexedWare\Settings\UnityLoader\VRChat\Dummy\VRCEconomy.dll</HintPath>
     </Reference>
     <Reference Include="VRCSDKBase">
-      <HintPath>..\..\..\..\Desktop\HexedWare\Settings\UnityLoader\VRChat\Dummy\VRCSDKBase.dll</HintPath>
+      <HintPath>C:\Users\Umbra\Desktop\HexedWare\Settings\UnityLoader\VRChat\Dummy\VRCSDKBase.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
