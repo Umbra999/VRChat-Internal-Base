@@ -17,8 +17,10 @@ namespace HexedBase
 
         private static void Patch(IntPtr instance)
         {
+            // Call the original method as prefix so we can call our method after, alternative way is to call the og method as postfix to edit data before
             originalMethod(instance);
 
+            // Cast our Pointer to a valid Player like its orginally used
             VRC.Player player = instance == IntPtr.Zero ? null : new VRC.Player(instance);
 
             if (player == null) return;
