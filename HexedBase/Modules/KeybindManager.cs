@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace HexedBase
+namespace HexedBase.Modules
 {
     internal class KeybindManager
     {

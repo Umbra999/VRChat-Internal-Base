@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.9.34616.47
+VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexedBase", "HexedBase\HexedBase.csproj", "{7B69DBAD-33A4-42BC-8323-FAE85FAD82F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexedBase", "HexedBase\HexedBase.csproj", "{F6309648-67A0-4FEE-A5CD-EB9ADCB0425B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7B69DBAD-33A4-42BC-8323-FAE85FAD82F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7B69DBAD-33A4-42BC-8323-FAE85FAD82F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7B69DBAD-33A4-42BC-8323-FAE85FAD82F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7B69DBAD-33A4-42BC-8323-FAE85FAD82F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6309648-67A0-4FEE-A5CD-EB9ADCB0425B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6309648-67A0-4FEE-A5CD-EB9ADCB0425B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6309648-67A0-4FEE-A5CD-EB9ADCB0425B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6309648-67A0-4FEE-A5CD-EB9ADCB0425B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E26C3BC2-314C-4877-A825-001E5206E54C}
+		SolutionGuid = {E805ED13-3CE3-438A-8786-67CF1F4585BD}
 	EndGlobalSection
 EndGlobal
