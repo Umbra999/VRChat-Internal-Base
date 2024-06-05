@@ -9,7 +9,7 @@ namespace HexedBase
 {
     public class Entry : HexedCheat
     {
-        public override void OnLoad()
+        public override void OnLoad(string[] args)
         {
             // Entry thats getting called by HexedLoader, this is alawys the startpoint of the cheat
             Console.WriteLine("Hexed Base Cheat successfully loaded!");
